@@ -1,0 +1,51 @@
+
+<div id="bt-show-menu"
+     class="animated avgrund-contents"
+     ng-class="{slideInLeft:!toggleShowMenu,slideOutLeft:toggleShowMenu}"
+     ng-click="showMenu()">
+    <i class="icon ion-grid"></i>
+</div>
+
+<div id="title-bar"
+     class="animated avgrund-contents"
+     ng-class="{slideInRight:!toggleShowMenu,slideOutRight:toggleShowMenu}"
+     ng-show="showTitleBar">
+    <span ng-cloak>{{ titlePage }}</span>
+</div>
+
+<div class="panel-bts {{ panelToBar }}">
+    <button
+            onclick="javascript:openDialog();"
+            class="button button-positive avgrund-contents {{ hideBt }}">
+        Authentification
+    </button>
+
+    <button
+            ng-click="loadPage('/equipement')"
+            href="#equipement"
+            ng-style="hideTxt"
+            ng-class="{transparent:btActive[0],slideInLeft:toggleShowMenu,slideOutLeft:!toggleShowMenu}"
+            class="button button-energized avgrund-contents bt-equip animated">
+        Equipement
+    </button>
+
+
+    <button
+            ng-click="loadPage('/ateliers')"
+            href="#ateliers"
+            ng-style="hideTxt"
+            ng-class="{transparent:btActive[1],slideInLeft:toggleShowMenu,slideOutLeft:!toggleShowMenu}"
+            class="button button-royal avgrund-contents bt-atel animated">
+        Ateliers
+    </button>
+
+
+    <button
+            ng-click="loadPage('/activites')"
+            href="#activites"
+            ng-style="hideTxt"
+            ng-class="{transparent:btActive[2],slideInLeft:toggleShowMenu,slideOutLeft:!toggleShowMenu}"
+            class="button button-balanced avgrund-contents bt-activ animated">
+        Activités
+    </button>
+</div>

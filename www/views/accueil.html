@@ -1,0 +1,29 @@
+<ion-view nav-transition="false">
+    <ion-content id="accueil" class="animated fadeIn">
+
+        <!--HEADER-->
+        <div class="animated fadeIn bar bar-header hide-on-keyboard-open avgrund-contents"
+             ng-class="{toHide:!toggleShowMenu&&mobile,fadeIn:toggleShowMenu&&mobile}">
+            <img src="img/logo.png" alt="logo" />
+        </div>
+
+                <aside id="popup">
+                    <div id="default-popup" class="avgrund-popup" style="text-align:center;padding-top:20px;">
+                        <label class="item item-input item-stacked-label" style="margin-bottom:15px;">
+                            <input type="password" ng-model="dataBox.mp" placeholder="Identifiant" autofocus>
+                        </label>
+                        <button ng-click="verifMP()" onclick="javascript:closeDialog();">CONNEXION</button>
+                    </div>
+                </aside>
+
+                <navigation></navigation>
+
+                <!--TOUTES LES PAGES VISIBLES ET DEFILEMENT AUTOMATIQUE AU CLIC SUR UN BOUTON DE NAV-->
+                <div>
+                    <equipement></equipement>
+                    <ateliers></ateliers>
+                    <activites></activites>
+                </div>
+
+    </ion-content>
+</ion-view>

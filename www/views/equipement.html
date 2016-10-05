@@ -1,0 +1,35 @@
+<div id="equipement" class="animated" ng-style="stylePages" ng-class="{fadeIn:pageEquip,noVisible:!pageEquip,toFront:pageEquip,toBack:toggleShowMenu}">
+
+    <div class="card">
+        <div class="item item-divider item-energized">
+            Réservation de la salle
+        </div>
+        <div class="item item-text-wrap">
+            <div class="item range">
+                <span>Choisir une heure :</span>
+                <input type="range" min="6" max="23" ng-model="salle" name="reserv_salle">
+                <span ng-cloak>{{ salle }} h</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="item item-divider item-energized">
+            Réservation de vélos
+        </div>
+        <div class="item item-text-wrap">
+            <div class="item range">
+                <span>Choisir une heure :</span>
+                <input type="range" min="6" max="23" ng-model="velo" name="reserv_salle">
+                <span ng-cloak>{{ velo }} h</span>
+            </div>
+            <div class="button-bar">
+                <a class="button">1</a>
+                <a class="button">2</a>
+                <a class="button">3</a>
+                <a class="button">4</a>
+                <a class="button">5</a>
+            </div>
+        </div>
+    </div>
+</div>

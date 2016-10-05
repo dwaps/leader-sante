@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/avgrund.css">
+
+		<script>
+			function openDialog() {
+				Avgrund.show( "#default-popup" );
+			}
+			function closeDialog() {
+				Avgrund.hide();
+			}
+		</script>
+
+	</head>
+
+	<body>
+
+		<aside id="default-popup" class="avgrund-popup">
+			<button onclick="javascript:closeDialog();">Close</button>
+		</aside>
+
+		<article class="avgrund-contents">
+			<button onclick="javascript:openDialog();">Open Avgrund</button>
+		</article>
+
+		<div class="avgrund-cover"></div>
+
+		<script type="text/javascript" src="js/avgrund.js"></script>
+	</body>
+</html>
