@@ -25,6 +25,7 @@ Simple project presentation.
 	npm install
 	bower install
 
+---
 
 [DWAPS Formation] (http://dwaps.fr)
 
