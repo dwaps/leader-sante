@@ -27,6 +27,6 @@ Simple project presentation.
 
 ---
 
-[DWAPS Formation] (http://dwaps.fr)
+[® DWAPS Formation - Michael Cornillon](http://dwaps.fr "DWAPS")
 
-[Leader Sante (de Leader Alès)] (http://leader-ales.fr)
+[Leader Sante (de Leader Alès)](http://leader-ales.fr)
